@@ -63,6 +63,10 @@ function make_percentes () {
     document.querySelector("#work-percent-pie-value").innerHTML = "100%";
     document.querySelector("#work-percent-pie-diagram").style.setProperty("--percenteges", 1);
     return;
+  } else if (date.getHours() < 9) {
+    document.querySelector("#work-percent-pie-value").innerHTML = "0%";
+    document.querySelector("#work-percent-pie-diagram").style.setProperty("--percenteges", 0);
+    return;
   }
   const work_seconds = (17 - 9) * 3600;
   let percent = Math.round(((date.getSeconds() - 60) + (date.getMinutes() - 60) * 60 + (date.getHours() - 9) * 3600) / work_seconds * 100);
