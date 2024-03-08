@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Worker</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div id="inner-body">
+      <nav>
+        <div>
+          <button><img src="./assets/home-flaticon.png"/></button>
+          <button><img src="./assets/logistics-flaticon.png"/></button>
+          <button><img src="./assets/shipped-flaticon.png"/></button>
+          <button><img src="./assets/delivery-man-flaticon.png"/></button>
+          <button><img src="./assets/mail-flaticon.png"/></button>
+        </div>
+        <div>
+          <button><img src="./assets/locker-flaticon.png"/></button>
+          <button><img src="./assets/delivery-boy-flaticon.png"/></button>
+          <button><img src="./assets/delivery-flaticon.png"/></button>
+        </div>
+      </nav>
+      <main>
+        <div id="main-body">
+          <div>
+            <img src="./assets/girl.jpeg" id="main-body-img" />
+          </div>
+          <div id="status-main-body">
+            <div id="status-main-body-data">
+              <span>
+                <span id="status-main-month">Січень</span> <span id="status-main-year">2024</span>
+                <br />
+                <span id="status-main-day">02</span>
+              </span>
+            </div>
+            <div id="status-main-body-person-info">
+              <span id="status-main-peson-post">Молодший-менеджер</span>
+              <br />
+              <span id="status-main-peson-name">Коваль Євгеній</span>
+              <br />
+              <span id="status-main-peson-id">id: 126125</span>
+            </div>
+            <button id="status-main-body-legal">Юридична інформація</button>
+          </div>
+          <button id="status-main-btn">
+            <img src="./assets/id-badge.svg" />
+          </button>
+        </div>
+        <div id="subpart-body">
+          <div id="next-transition-line">
+            Наступний завіз: <span id="next-transition">28.09</span>
+          </div>
+          <div id="amount-of-parcels-line">
+            Кількість посилок на складі: <span id="amount-of-parcels">2901</span>
+          </div>
+        </div>
+        <button id="subpart-body-btn">
+          <img src="./assets/fire.svg" />
+        </button>
+      </main>
+      <div id="right-bar">
+        <div>
+          <span id="right-upper-text">12:20</span>
+          <div id="right-upper-inner">
+            <h3>Графік роботи</h3>
+            <div id="calendar"></div>
+            <button id="calendar-more-btn">
+              Детальніше
+            </button>
+          </div>
+        </div>
+        <div id="right-bottom">
+          <div id="work-percent-pie-diagram"></div>
+          <div id="work-percent-text">
+            <span>Відпрацьовано</span>
+            <br />
+            <span id="work-percent-pie-value">67%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="./index.js"></script>
+</html>
